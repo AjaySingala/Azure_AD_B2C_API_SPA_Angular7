@@ -1,0 +1,18 @@
+<div>
+    <div>
+        <button (click)="login()" [disabled]="globalSvc.getLoggedOn()">Login</button>
+    </div>
+    <div>
+        <button (click)="logout()" [disabled]="!globalSvc.getLoggedOn()">Logout</button>
+    </div>
+</div>
+<div>
+    <b>Username: </b> {{ username }}
+</div>
+<div>
+    <button (click)="callAPIWithToken()">Call API</button>
+</div>
+<hr>
+<div>
+    <app-home></app-home>
+</div>
