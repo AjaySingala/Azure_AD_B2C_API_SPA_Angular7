@@ -8,6 +8,8 @@
 </div>
 <div>
     <b>Username: </b> {{ username }}
+    <br>
+    <strong *ngIf="username != null"><em>Check console for output after accessing API</em></strong>
 </div>
 <div>
     <button (click)="callAPIWithToken()">Call API</button>
